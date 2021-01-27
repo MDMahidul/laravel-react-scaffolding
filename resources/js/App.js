@@ -1,15 +1,13 @@
 import React from 'react';
-import Menu from "./components/menu";
-import banner from "../images/banner.svg";
-import  "../css/style.css";
+import {BrowserRouter} from "react-router-dom";
+import AppRoute from "./route/AppRoute";
 
 function App() {
     return (
-        <div>
-            <Menu/>
-            <img src={banner}/>
-            <button className="normal-btn btn"> My Button </button>
-        </div>
+        <BrowserRouter>
+            <AppRoute/>
+
+        </BrowserRouter>
     );
 }
 
