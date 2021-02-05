@@ -13,7 +13,12 @@ class PaymentGuideTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('payment_guide',function(Blueprint $table){
+            $table->bigIncrements('id');
+            $table->string('des',1000);
+            $table->string('price',1000);
+            $table->string('banner',1000);
+        });
     }
 
     /**
