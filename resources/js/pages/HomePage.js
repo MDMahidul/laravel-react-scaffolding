@@ -1,6 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import Menu from "../components/menu";
 import HomeBanner from "../components/homeBanner";
+import CourseFeature from "../components/courseFeature";
+import CoursePlanHome from "../components/coursePlanHome";
 
 class HomePage extends Component {
     render() {
@@ -8,6 +10,8 @@ class HomePage extends Component {
             <Fragment>
                 <Menu/>
                 <HomeBanner/>
+                <CourseFeature/>
+                <CoursePlanHome/>
             </Fragment>
         );
     }
